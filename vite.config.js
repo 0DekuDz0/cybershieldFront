@@ -10,4 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  ssr: {
+    noExternal: ["@mui/material", "@mui/system", "@mui/icons-material"],
+  },
 })
