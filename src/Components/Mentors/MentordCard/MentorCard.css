@@ -1,0 +1,47 @@
+.mentorCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    max-width:321.53px;
+    max-height: 427px;
+    margin: 0;
+
+}
+
+.mentorCard .mentorImage {
+    width: 100%;
+    height: 100%;
+}
+
+.mentorCard .mentorImage img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: top;
+}
+
+.mentorCard .mentorInfo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.mentorInfo{
+    width: 90%;
+    
+}
+.mentorInfo p{
+    color: var(--orange--color);
+    text-wrap: wrap;
+}
+
+.mentorInfo h2{
+    text-wrap: wrap;
+    width: 100%;
+}
+
+

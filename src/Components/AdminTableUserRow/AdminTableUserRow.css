@@ -1,0 +1,156 @@
+.tableRow {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(
+        90deg,
+        #0b0b0b 0%,
+        #141414 40.5%,
+        #141414 61%,
+        #0b0b0b 100%
+    );
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.tableRow-visible {
+    height: auto; 
+}
+
+.tableRow-invisible {
+    height: 10vh; 
+} 
+
+
+
+.tableRow .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    border-radius: 12px;
+    padding: 0 3rem;
+    color: var(--white--color);
+}
+
+.id, .name, .email, .status, .more {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    cursor: pointer;
+}
+
+
+.info{
+    width: 100%;
+    height: 60vh;
+    
+    padding: 0 3rem;
+    border-radius: 12px;
+    color: var(--white--color);
+}
+
+
+.info-invisible {
+    display: none;
+}
+
+.info-visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.two-info-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    border-radius: 12px;
+    padding: 0 3rem;
+    color: var(--white--color);
+}
+
+.one-info-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    border-radius: 12px;
+    padding: 0 3rem;
+    color: var(--white--color);
+}
+
+.info-row{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.info-row h3{
+    width: 30%;
+}
+
+.info-row h2{
+    width: 70%;
+}
+
+.info-row input{
+    width: 70%;
+    height: 80%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white--color);
+    color: var(--black--color);
+}
+
+.one-info-row h3{
+    width: 10%;
+}
+
+.one-info-row input{
+    width: 90%;
+    height: 80%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white--color);
+    color: var(--black--color);
+
+}
+
+.info-row button{
+    width: 45%;
+    height: 80%;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange--color);
+    color: var(--white--color);
+}
+
+.rotation{
+    transform: rotate(90deg);
+}

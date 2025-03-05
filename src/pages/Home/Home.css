@@ -1,0 +1,65 @@
+
+.home{
+    width: 100%;
+    height: 95vh;
+    background-image: url("/public/pexels-juicemitapfelndrin-30561676\ 1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 7rem;
+
+}
+
+.home .eventTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home .hackathonName {
+    font-size: 7vw;
+
+}
+
+.home .hackathonName span{
+    color: var(--orange--color);
+}
+
+
+
+.eventInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: -15vh;
+    width: 40vw;
+    margin: 0 7rem;
+}
+
+.eventInfo div{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+
+.eventInfo div p{
+    width: 50%;
+    height: 100%;
+    margin-right: 2rem;
+    line-height: 30px;
+    font-weight: 100;
+}
+

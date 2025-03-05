@@ -1,0 +1,70 @@
+.agenda {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5rem;
+}
+.agenda .agendaRow:nth-child(odd) {
+  background: linear-gradient(
+    90deg,
+    #0b0b0b 0%,
+    #141414 40.5%,
+    #141414 61%,
+    #0b0b0b 100%
+  );
+}
+
+.agenda .agendaRow:nth-child(2) {
+  background: transparent;
+}
+.day-section {
+  width: 100%;
+  height: 90%;
+}
+.agendaTable {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.pointContainer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+
+.point {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0.5rem;
+}
+
+.pointActive {
+  background-color: var(--orange--color);
+}

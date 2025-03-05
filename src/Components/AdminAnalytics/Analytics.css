@@ -1,0 +1,75 @@
+.main1 div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.graph{
+    background-color: var(--white--color);
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+
+}
+
+.graph div{
+    width: 100%;
+    height: 100%;
+}
+
+.nbrParticipants{
+    background-color: var(--white--color);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+}
+
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    gap: 2rem;
+}
+
+.main2 div{
+    background-color: var(--white--color);
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+
+}
+
+.main2 div h3{
+    text-align: center;
+}
+
+.main2 h3, .main1 h3{
+    color: var(--black--color);
+}
+
+
+.nbrEquipe div , .vra div, .tauxAcceptation div , .nbrParticipants div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

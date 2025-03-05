@@ -1,0 +1,18 @@
+.contact{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 7rem;
+    margin-top: 10rem;
+}
+
+.contactInfo{
+    padding: 5rem 0;
+}
+
+.contactInfo div{
+    margin: 1rem 0;
+}
