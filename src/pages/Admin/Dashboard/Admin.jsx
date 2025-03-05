@@ -1,7 +1,7 @@
 import "./Admin.css";
 import { useState } from "react";
 import * as React from "react";
-import { Analytics } from "../../../Components/AdminAnalytics/analytics";
+import { Analytics } from "../../../Components/AdminAnalytics/Analytics";
 import AdminTableUser from "../../../Components/AdminTableUser/AdminTableUser";
 import AdminTableTeam from "../../../Components/AdminTableTeam/AdminTableTeam";
 
