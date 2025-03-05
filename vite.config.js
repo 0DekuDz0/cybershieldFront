@@ -11,12 +11,6 @@ export default defineConfig({
   ssr: {
     noExternal: true, 
   },
-  server: {
-    historyApiFallback: true,
-  },
-  preview: {
-    historyApiFallback: true,  // Needed for React Router in prod
-  },
   build: {
     chunkSizeWarningLimit: 100,
     rollupOptions: {
