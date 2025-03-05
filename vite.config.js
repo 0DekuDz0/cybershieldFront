@@ -11,6 +11,9 @@ export default defineConfig({
   ssr: {
     noExternal: true, 
   },
+  server: {
+    historyApiFallback: true,
+  },
   build: {
     chunkSizeWarningLimit: 100,
     rollupOptions: {
