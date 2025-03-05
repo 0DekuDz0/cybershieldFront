@@ -14,6 +14,9 @@ export default defineConfig({
   server: {
     historyApiFallback: true,
   },
+  preview: {
+    historyApiFallback: true,  // Needed for React Router in prod
+  },
   build: {
     chunkSizeWarningLimit: 100,
     rollupOptions: {
