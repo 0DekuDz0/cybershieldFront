@@ -1,3 +1,4 @@
+"use client";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { PieChart } from "@mui/x-charts";
 import "./Analytics.css";
