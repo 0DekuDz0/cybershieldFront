@@ -7,8 +7,8 @@ export default function AdminTableUser(){
 
     async function getUsers(){
       try{
-          const API_URL = import.meta.env.REACT_APP_BACKEND_URI;
-          
+          const API_URL = import.meta.env.VITE_BACKEND_URI;
+
           const res = await fetch(
               `${API_URL}/api/get_participant_all/`,
               {
@@ -23,7 +23,6 @@ export default function AdminTableUser(){
           if(res.ok){
               const data = await res.json();
               setUserData(data.participants);
-              console.log(data);
           }
       }catch(err){
         console.log(err);

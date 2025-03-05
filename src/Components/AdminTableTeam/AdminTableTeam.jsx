@@ -18,9 +18,8 @@ export default function AdminTableTeam() {
   
       async function getTeams(){
         try{
-            const API_URL = import.meta.env.REACT_APP_BACKEND_URI;
+            const API_URL = import.meta.env.VITE_BACKEND_URI;
             const token = getCookie("CyberShieldToken");
-            console.log(token);
             const res = await fetch(
                 `${API_URL}/api/get_team_all/`,
                 {
@@ -35,7 +34,6 @@ export default function AdminTableTeam() {
             if(res.ok){
                 const data = await res.json();
                 setTeamsData(data.teams);
-                console.log(data);
             }
         }catch(err){
           console.log(err);

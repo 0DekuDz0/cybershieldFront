@@ -11,7 +11,7 @@ export default function AdminAuth() {
     async function submitForm(e) {
         e.preventDefault();
         try {
-            const API_URL = "http://127.0.0.1:8000";
+            const API_URL = import.meta.env.VITE_BACKEND_URI;
 
             const res = await fetch(
                 `${API_URL}/api/login/`,
@@ -28,9 +28,7 @@ export default function AdminAuth() {
                 }
             );
             if(res.ok){
-                console.log("login successful");
                 const data = await res.json();
-                console.log(data);
                 navigate("/Admin/Dashboard"); 
             }
         } catch (err) {

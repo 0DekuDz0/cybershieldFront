@@ -18,9 +18,8 @@ export default function Register({ element }) {
 
   async function submitForm() {
     element.className = "registerForm-invisible";
-    console.log("Form Submitted");
     try {
-      const API_URL = import.meta.env.REACT_APP_BACKEND_URI;
+      const API_URL = import.meta.env.VITE_BACKEND_URI;
 
       const res = await fetch(
         `${API_URL}/api/add_participant/`,
@@ -62,7 +61,6 @@ export default function Register({ element }) {
     e.preventDefault();
     formIndex - 1 < 1 ? setFormIndex(1) : setFormIndex(formIndex - 1);
   }
-  console.log("element", element);
 
   return (
     <>
