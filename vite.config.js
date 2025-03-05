@@ -13,4 +13,7 @@ export default defineConfig({
   ssr: {
     noExternal: ["@mui/material", "@mui/system", "@mui/icons-material"],
   },
+  build: {
+    sourcemap: false,
+  },
 })
