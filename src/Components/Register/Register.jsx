@@ -20,7 +20,7 @@ export default function Register({ element }) {
     element.className = "registerForm-invisible";
     console.log("Form Submitted");
     try {
-      const API_URL =  "http://127.0.0.1:8000";
+      const API_URL = import.meta.env.REACT_APP_BACKEND_URI;
 
       const res = await fetch(
         `${API_URL}/api/add_participant/`,

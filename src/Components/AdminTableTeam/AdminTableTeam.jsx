@@ -18,7 +18,7 @@ export default function AdminTableTeam() {
   
       async function getTeams(){
         try{
-            const API_URL = "http://127.0.0.1:8000";
+            const API_URL = import.meta.env.REACT_APP_BACKEND_URI;
             const token = getCookie("CyberShieldToken");
             console.log(token);
             const res = await fetch(
