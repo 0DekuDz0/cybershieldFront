@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Countdown.css";
 export default function Countdown() {
 
@@ -7,6 +7,21 @@ export default function Countdown() {
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
+
+    const interval = setInterval(()=>{
+        const now = new Date().getTime();
+        const hackathonDate = new Date("2025-12-10T12:00:00Z").getTime();
+        const timeLeft = hackathonDate - now;
+        setMonths(Math.floor(timeLeft / (1000 * 60 * 60 * 24 * 30)));
+        setDays(Math.floor((timeLeft % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)));
+        setHours(Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+        setMinutes(Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)));
+        setSeconds(Math.floor((timeLeft % (1000 * 60)) / 1000));
+    }, 1000);
+
+    useEffect(()=>{
+        return () => clearInterval(interval);
+    }, [interval]);
 
     return(
         <>
