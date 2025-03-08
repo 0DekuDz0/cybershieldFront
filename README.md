@@ -1,4 +1,4 @@
-# CyberShield
+# CyberShield -- Still in Dev
 
 CyberShield is a registration platform for hackathons. It provides an intuitive registration form for participants and an admin dashboard for managing registrations and event details.
 
