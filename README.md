@@ -24,6 +24,7 @@ CyberShield is a registration platform for hackathons. It provides an intuitive 
 - **Tailwind CSS** - Styling framework for modern UI design.
 
 ### Backend
+-**Backend Repo Link** - https://github.com/0DekuDz0/cybershield-backend
 - **Django Rest Framework (DRF)** - API development.
 - **Django SimpleJWT** - Authentication and token management.
 - **CORS Headers** - Secure cross-origin requests.
