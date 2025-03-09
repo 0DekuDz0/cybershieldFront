@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <>
       <div className="home">
-        <div className="eventTitle">
+        <div className="eventTitle typewriter">
           <h3 className="sectionTitle ">{`<Alger, Mar 10-12 2025>`}</h3>
-          <h1 className="hackathonName">
+          <h1 className="hackathonName " >
             Cyber<span>Shield</span> Hackathon
           </h1>
         </div>

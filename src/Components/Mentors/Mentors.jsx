@@ -1,5 +1,6 @@
 import MentorCard from "./MentordCard/MentorCard";
 import "./Mentors.css";
+
 export default function Mentors() {
     
     const mentors = [{"mentorImage": "/Adam.svg", "mentorName": "Adam Belkadi", "mentorDescription": "Backend Dev"},
