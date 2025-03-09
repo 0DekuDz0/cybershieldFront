@@ -3,7 +3,7 @@ import Agenda from "./Agenda/Agenda";
 export default function AgendaSection() {
   return (
     <>
-      <div className="agendaSection">
+      <div className="agendaSection" id="agenda">
         <div>
           <h3 className="sectionTitle">{`<Hackathon_agenda>`}</h3>
           <h1 className="mentorsTitle">

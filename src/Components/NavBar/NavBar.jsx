@@ -18,10 +18,10 @@ export default function NavBar() {
         </div>
         <div className="navLinks">
           <ul>
-            <li><h3>Home</h3></li>
-            <li><h3>Mentors</h3></li>
-            <li><h3>Agenda</h3></li>
-            <li><h3>Contact</h3></li>
+            <li><a href="#home"><h3>Home</h3></a></li>
+            <li><a href="#mentors"><h3>Mentors</h3></a></li>
+            <li><a href="#agenda"><h3>Agenda</h3></a></li>
+            <li><a href="#contact"><h3>Contact</h3></a></li>
           </ul>
         </div>
         <div className="registerButton">

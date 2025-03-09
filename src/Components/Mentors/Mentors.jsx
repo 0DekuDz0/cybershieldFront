@@ -10,7 +10,7 @@ export default function Mentors() {
     
     return (
        <>
-            <div className="mentorsSection">
+            <div className="mentorsSection" id="mentors">
                 <div className="mentorsTitleSection">
                     <h3 className="sectionTitle">{`<Hackathon_mentors>`}</h3>
                     <h1 className="mentorsTitle">Our Hackathon <br></br>Mentors</h1>

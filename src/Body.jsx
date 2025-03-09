@@ -14,9 +14,9 @@ export default function Body() {
         <NavBar />
         <Home />
         <Countdown />
-        <Mentors />
+        <Mentors/>
         <AgendaSection />
-        <Contact />
+        <Contact/>
         <Footer />
       </div>
     </>

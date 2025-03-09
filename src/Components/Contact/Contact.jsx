@@ -4,7 +4,7 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <>
-      <div className="contact">
+      <div className="contact" id="contact">
         <div>
           <h3 className="sectionTitle">{`<Have_Question?>`}</h3>
           <h1 className="mentorsTitle">
