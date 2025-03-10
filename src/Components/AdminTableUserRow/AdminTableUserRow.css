@@ -154,3 +154,9 @@
 .rotation{
     transform: rotate(90deg);
 }
+
+
+
+.info-row-team{
+    max-height: 100px;
+}
