@@ -1,27 +1,36 @@
-import { useEffect, useState , useMemo} from "react";
+import { useEffect, useState, useMemo } from "react";
 import { AdminTableUserRow } from "../AdminTableUserRow/AdminTableUserRow";
 import "./AdminTableUser.css";
 import { useAdminData } from "../../Context/AdminDataProvider";
-import { b } from "motion/react-client";
 
 export default function AdminTableUser() {
   const { usersData, fetchUsers } = useAdminData();
+  const [searchInput, setSearchInput] = useState("");
   const [filter, setFilter] = useState("All");
-  const userDataAccepted = useMemo(() => 
-    usersData?.filter((data) => data.participant_status === "Accepted") || [], 
+  const userDataAccepted = useMemo(
+    () =>
+      usersData?.filter((data) => data.participant_status === "Accepted") || [],
     [usersData]
   );
-  
-  const userDataWaiting = useMemo(() => 
-    usersData?.filter((data) => data.participant_status === "Pending") || [], 
+
+  const userDataWaiting = useMemo(
+    () =>
+      usersData?.filter((data) => data.participant_status === "Pending") || [],
     [usersData]
   );
 
   return (
     <>
       <div className="AdminTableUser">
+        <input
+          type="search"
+          name="userScearch"
+          id="userScearch"
+          onChange={(e) => {
+            setSearchInput(e.target.value);
+          }}
+        />
         <div className="filter">
-          <h1>Users</h1>
           <button
             onClick={() => setFilter("All")}
             style={{
@@ -74,6 +83,20 @@ export default function AdminTableUser() {
                 filteredData = userDataAccepted;
               } else if (filter === "Waiting") {
                 filteredData = userDataWaiting;
+              }
+
+              if (searchInput !== "") {
+                filteredData = filteredData.filter((data) => {
+                  return (
+                    data?.participant_name
+                      .toLowerCase()
+                      .includes(searchInput.toLowerCase()) ||
+                    data?.participant_email
+                      .toLowerCase()
+                      .includes(searchInput.toLowerCase()) ||
+                    data?.participant_id.toString().includes(searchInput)
+                  );
+                });
               }
 
               return filteredData?.map((data) => (

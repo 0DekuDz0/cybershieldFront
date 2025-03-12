@@ -33,7 +33,9 @@ export default function ProtectedRoute({ element }) {
     }, [checkAdminAuth]);
 
     if (isAuthenticated === null) {
-        return <div>Loading...</div>;
+        return <div className="loaderContainer">
+             <div className="loader"></div>
+        </div>
     }
 
     return isAuthenticated ? element : <Navigate to="/Admin/logIn" />;

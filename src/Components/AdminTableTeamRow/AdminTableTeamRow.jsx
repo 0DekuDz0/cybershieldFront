@@ -10,6 +10,54 @@ export function AdminTableTeamRow({ data }) {
     const [team_project_description, setTeam_project_description] = useState(data.team_project_description || "");
     const [team_project_links, setTeam_project_links] = useState(data.team_project_links || "");
 
+    async function update(){
+        try{
+            const API_URL = import.meta.env.VITE_BACKEND_URI;
+            const res = await fetch(`${API_URL}/api/update_team/`,{
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    team_id: data?.team_id,
+                    team_leader: team_leader_id,
+                    team_name: team_name,
+                    team_project_name: team_project_name,
+                    team_project_description: team_project_description,
+                    team_project_links: team_project_links,
+                }),
+                credentials: "include",
+            })
+            if(res.ok){
+                console.log("Team Updated", res);
+            }
+        }catch(err){
+
+        }
+    }
+
+    async function deleteTeam(){
+        try{
+            const API_URL = import.meta.env.VITE_BACKEND_URI;
+            const res = await fetch(`${API_URL}/api/delete_team/`,{
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    team_id: data?.team_id,
+                }),
+                credentials: "include",
+            })
+            if(res.ok){
+                console.log("Team Deleted", res);
+            }
+        }catch(err){
+            console.log(err);
+
+        }
+    }
+
     return (
         <div className={`tableRow ${visible ? "tableRow-visible" : "tableRow-invisible"}`}>
             <div className="description">
@@ -46,10 +94,10 @@ export function AdminTableTeamRow({ data }) {
                     </div>
                     <div className="info-row">
                             <button className="info-row-team">
-                                <h3>Update</h3>
+                                <h3 onClick={update}>Update</h3>
                             </button>
                             <button className="info-row-team">
-                                 <h3>Refuse</h3> 
+                                 <h3 onClick={deleteTeam}>Refuse</h3> 
                             </button>
                         </div>
                 </div>
