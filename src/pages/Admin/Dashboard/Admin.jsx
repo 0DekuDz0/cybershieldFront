@@ -10,11 +10,12 @@ export default function Admin() {
   const [src2, setSrc2] = useState("/user-list.svg");
   const [src3, setSrc3] = useState("/user-group.svg");
   const [activeTab, setActiveTab] = useState("analytics");
+  
   return (
     <>
       <div className="adminSection">
         <div className="logo">
-          <h1>CyberShield </h1>
+          <h1>Cyber<span>Shield</span> </h1>
         </div>
         <div className="adminPanel">
           <div className="adminSideBar">

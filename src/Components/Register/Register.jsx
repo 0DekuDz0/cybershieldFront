@@ -9,7 +9,7 @@ export default function Register({ element }) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [skills, setSkills] = useState("");
-  const [previousParticipation, setPreviousParticipation] = useState("");
+  const [previousParticipation, setPreviousParticipation] = useState();
   const [LinkedIn, setLinkedIn] = useState("");
   const [github, setGithub] = useState("");
   const [personalWebsite, setPersonalWebsite] = useState("");
@@ -170,18 +170,20 @@ export default function Register({ element }) {
                       type="radio"
                       name="previousParticipation"
                       value="True"
-                      onChange={(e) => setPreviousParticipation(e.target.value)}
-                    />
-                    <label htmlFor="Yes">Yes</label>
+                      id="previousParticipationYes"
+                      onChange={() => setPreviousParticipation(true)}
+                      />
+                    <label htmlFor="previousParticipationYes">Yes</label>
                   </div>
                   <div>
                     <input
                       type="radio"
                       name="previousParticipation"
                       value="False"
-                      onChange={(e) => setPreviousParticipation(e.target.value)}
-                    />
-                    <label htmlFor="No">No</label>
+                      id="previousParticipationNo"
+                      onChange={() => setPreviousParticipation(false)}
+                      />
+                    <label htmlFor="previousParticipationNo">No</label>
                   </div>
                 </div>
 

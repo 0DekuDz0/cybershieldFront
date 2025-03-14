@@ -1,0 +1,33 @@
+
+.alerte{
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    width: 30vw;
+    height: 20vh;
+    background-color: var(--orange--color);
+    color: var(--white--color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    flex-direction: column;
+    ;
+}
+
+.alerte h1{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alerte-content{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}

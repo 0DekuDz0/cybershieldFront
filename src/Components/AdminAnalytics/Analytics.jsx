@@ -1,7 +1,18 @@
 import { LineChart } from "@mui/x-charts/LineChart";
 import { PieChart } from "@mui/x-charts";
 import "./Analytics.css";
+import { useAdminData } from "../../Context/AdminDataProvider";
 export function Analytics() {
+  const { stat, fetchStat } = useAdminData();
+
+  console.log(
+    stat,
+    stat?.total_participants,
+    stat?.total_teams,
+    stat?.accepted_participants,
+    stat?.refused_participants,
+    stat?.all_participants
+  );
   return (
     <>
       <div className="main1">
@@ -22,19 +33,7 @@ export function Analytics() {
         <div className="nbrParticipants">
           <h3>Nombre total de participants inscrits</h3>
           <div>
-            <PieChart
-              series={[
-                {
-                  data: [
-                    { id: 0, value: 10, label: "series A" },
-                    { id: 1, value: 15, label: "series B" },
-                    { id: 2, value: 20, label: "series C" },
-                  ],
-                },
-              ]}
-              width={400}
-              height={200}
-            />
+            <h1>{stat?.total_participants}</h1>
           </div>
         </div>
       </div>
@@ -42,19 +41,7 @@ export function Analytics() {
         <div className="nbrEquipe">
           <h3>Nombre d’équipes crées</h3>
           <div>
-            <PieChart
-              series={[
-                {
-                  data: [
-                    { id: 0, value: 10, label: "series A" },
-                    { id: 1, value: 15, label: "series B" },
-                    { id: 2, value: 20, label: "series C" },
-                  ],
-                },
-              ]}
-              width={400}
-              height={200}
-            />
+            <h1>{stat?.total_teams}</h1>
           </div>
         </div>
         <div className="vra">
@@ -64,12 +51,29 @@ export function Analytics() {
               series={[
                 {
                   data: [
-                    { id: 0, value: 10, label: "series A" },
-                    { id: 1, value: 15, label: "series B" },
-                    { id: 2, value: 20, label: "series C" },
+                    {
+                      id: 0,
+                      value: stat?.accepted_participants,
+                      label: "Accepted Participants",
+                      color: "#ff8000",
+                    },
+                    {
+                      id: 1,
+                      value: stat?.refused_participants,
+                      label: "Refused Participants",
+                      color: "#000000",
+                    },
                   ],
                 },
               ]}
+              slotProps={{
+                legend: {
+                  labelStyle: {
+                    fontSize: 10,
+                    fontWeight: "bold",
+                  },
+                },
+              }}
               width={400}
               height={200}
             />
@@ -82,12 +86,29 @@ export function Analytics() {
               series={[
                 {
                   data: [
-                    { id: 0, value: 10, label: "series A" },
-                    { id: 1, value: 15, label: "series B" },
-                    { id: 2, value: 20, label: "series C" },
+                    {
+                      id: 0,
+                      value: stat?.all_participants,
+                      label: "All Participants",
+                      color: "#000000",
+                    },
+                    {
+                      id: 1,
+                      value: stat?.accepted_participants,
+                      label: "Accepted Participants",
+                      color: "#ff8000",
+                    },
                   ],
                 },
               ]}
+              slotProps={{
+                legend: {
+                  labelStyle: {
+                    fontSize: 10,
+                    fontWeight: "bold",
+                  },
+                },
+              }}
               width={400}
               height={200}
             />

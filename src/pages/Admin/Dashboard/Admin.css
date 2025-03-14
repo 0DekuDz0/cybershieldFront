@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+.logo span{
+    color: var(--orange--color);
+}
+
 .adminPanel{
     height: 93%;
     width: 100%;
