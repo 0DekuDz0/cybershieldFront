@@ -212,4 +212,8 @@
     .formData{
         overflow-x: scroll;
     }
+
+    .registerSection .close-button{
+        left: 90%;
+    }
 }

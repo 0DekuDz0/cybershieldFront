@@ -59,7 +59,6 @@ export default function Agenda() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextDay();
-      console.log("Day changed");
     }, 10000);
     return () => clearInterval(interval);
   },[]);

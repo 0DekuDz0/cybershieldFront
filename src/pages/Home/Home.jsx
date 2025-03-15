@@ -3,7 +3,7 @@ import { useState } from "react";
 import Register from "../../Components/Register/Register";
 
 export default function Home() {
-  const element = document.getElementById("registerForm");
+  const element = document.getElementById("registerFormPhone");
   const [showRegister, setShowRegister] = useState("invisible");
   return (
     <>
@@ -21,9 +21,9 @@ export default function Home() {
           }}><h2>Register</h2></button>
         </div>
 
-        <div className={`registerForm-${showRegister}`} id="registerForm">
+        <div className={`registerForm-${showRegister}`} id="registerFormPhone">
                 <Register element={element}></Register>
-              </div>
+          </div>
 
 
       </div>

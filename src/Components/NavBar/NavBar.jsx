@@ -5,6 +5,8 @@ export default function NavBar() {
 
     const [showRegister, setShowRegister] = useState("invisible");
     const element = document.getElementById("registerForm");
+
+    
     const [showMenu, setShowMenu] = useState("invisible");
 
 
