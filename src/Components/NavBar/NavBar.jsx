@@ -18,7 +18,7 @@ export default function NavBar() {
         </div>
         <div className="navLinksPhone">
             <div className="navLinksIcon" onClick={()=>{ showMenu === "invisible" ? setShowMenu("visible") : setShowMenu("invisible")}}>
-                <img src="/public/menu-phone.svg" alt="menu icon" />
+                <img src="/menu-phone.svg" alt="menu icon" />
             </div>
             <ul className={`linksPhone-${showMenu}`}>
               <li><a href="#home"><h3>Home</h3></a></li>
