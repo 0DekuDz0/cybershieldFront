@@ -16,3 +16,25 @@
 .contactInfo div{
     margin: 1rem 0;
 }
+
+@media screen and (max-width: 768px){
+    .contact{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+
+    .contactInfo{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    
+}

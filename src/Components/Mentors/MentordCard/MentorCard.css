@@ -44,4 +44,17 @@
     width: 100%;
 }
 
+@media screen and (max-width: 768px){
+    .mentorCard{
+        width: 100%;
+        position: static;
+        max-width: 100%;
+        height: 70vh;
+    }
 
+    .mentorCard .mentorInfo{
+        top: auto;
+        left: auto;
+        margin: 1rem;
+    }
+}

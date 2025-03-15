@@ -9,3 +9,12 @@
 
 }
 
+
+@media screen and (max-width: 768px){
+    .agendaSection{
+        width: 100%;
+        margin-top: 10vh;
+        padding: 0 2rem;
+    }
+    
+}

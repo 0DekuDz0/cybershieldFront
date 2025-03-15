@@ -91,3 +91,26 @@ body{
   background-repeat: no-repeat;
 
 }
+
+@media screen and (max-width: 768px){
+  h1{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  h3{
+    font-size: 11px;
+  }
+
+  p{
+    font-size: 10px;
+  }
+
+  .subP{
+    font-size: 11px;
+  }
+  
+}

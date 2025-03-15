@@ -52,3 +52,22 @@ form div{
     border: none;
 
 }
+
+@media screen and (max-width: 768px){
+    .contactForm{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    form div{
+        width: 100%;
+    }
+    .contactForm button{
+        width: 100%;
+    }
+    
+}

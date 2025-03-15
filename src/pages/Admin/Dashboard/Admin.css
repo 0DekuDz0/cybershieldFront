@@ -6,6 +6,10 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 1rem 1.5rem 2rem 1.5rem;
+    background-image: url("../../../../public/backgroundWebsite.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .logo{
@@ -64,6 +68,8 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.724);
+    border-radius: 12px;
 
 }
 

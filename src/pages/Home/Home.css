@@ -27,6 +27,7 @@
 
 }
 
+
 .home .hackathonName span{
     color: var(--orange--color);
 }
@@ -93,3 +94,41 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+
+  @media screen and (max-width: 768px){
+    .home{
+        height: 70vh;
+        padding: 0 2rem;
+
+    }
+
+    .home .eventTitle{
+        width: auto;
+    }
+
+    .home .hackathonName {
+        font-size: 8vw;
+    }
+
+    .eventInfo{
+        width: 100% ;
+        margin: 0 ;
+        padding: 0 2rem;
+
+    }
+
+    .eventInfo div{
+        width: 100%;
+        display: flex;
+        flex-direction: column ;
+
+    }
+
+    .eventInfo div p{
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+}

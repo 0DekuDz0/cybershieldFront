@@ -5,7 +5,7 @@ export default function NavBar() {
 
     const [showRegister, setShowRegister] = useState("invisible");
     const element = document.getElementById("registerForm");
-
+    const [showMenu, setShowMenu] = useState("invisible");
 
 
   return (
@@ -15,6 +15,17 @@ export default function NavBar() {
           <h1>
             Cyber<span>Shield</span>
           </h1>
+        </div>
+        <div className="navLinksPhone">
+            <div className="navLinksIcon" onClick={()=>{ showMenu === "invisible" ? setShowMenu("visible") : setShowMenu("invisible")}}>
+                <img src="/public/menu-phone.svg" alt="menu icon" />
+            </div>
+            <ul className={`linksPhone-${showMenu}`}>
+              <li><a href="#home"><h3>Home</h3></a></li>
+              <li><a href="#mentors"><h3>Mentors</h3></a></li>
+              <li><a href="#agenda"><h3>Agenda</h3></a></li>
+              <li><a href="#contact"><h3>Contact</h3></a></li>
+            </ul>
         </div>
         <div className="navLinks">
           <ul>

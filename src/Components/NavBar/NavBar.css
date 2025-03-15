@@ -95,3 +95,77 @@
 
 }
 
+
+.navLinksPhone{
+    background-color: var(--orange--color);
+    width: 15%;
+    height: 40%;
+}
+
+@media screen and (min-width: 769px){
+    
+    
+    .navLinksPhone{
+        display: none;
+    }
+
+
+
+    
+    
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+        width: 100vw;
+
+    }
+
+    .Logo{
+        width: 30%;
+
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .registerButton{
+        display: none;
+    }
+
+    .navLinksPhone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+
+    }
+
+    .navLinksPhone .linksPhone-visible{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+        width: 100vw;
+        height: 20vh;
+        padding: 0 1rem;
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        background-color: #00000094;
+
+    }
+
+    .navLinksPhone .linksPhone-invisible{
+        display: none;
+    }
+
+
+
+
+
+    
+}

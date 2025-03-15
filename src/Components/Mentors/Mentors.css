@@ -37,3 +37,33 @@
 .mentors .mentorCard:last-child{
     top: 15vh;
 }
+
+@media screen and (max-width: 768px){
+    .mentorsSection{
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        gap: 2rem;
+
+    }
+
+    .mentors{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding:  0;
+    
+
+    }
+
+    .mentorsTitleSection{
+        height: auto;
+    }
+
+    .mentorsTitleSection{
+        padding: 0 2rem;
+    }
+
+    
+    
+}
