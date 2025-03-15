@@ -1,6 +1,7 @@
 # CyberShield -- Still in Dev
 
 CyberShield is a registration platform for hackathons. It provides an intuitive registration form for participants and an admin dashboard for managing registrations and event details.
+Link : **https://cybershield-front.vercel.app/**
 
 ## Features
 
@@ -9,6 +10,7 @@ CyberShield is a registration platform for hackathons. It provides an intuitive 
 - **Animated UI:** The platform includes smooth animations using Framer Motion for an engaging user experience.
 
 ### Admin Features
+- **Admin Link:** https://cybershield-front.vercel.app/Admin/logIn
 - **Admin Authentication:** Only authorized admins can access the dashboard.
 - **Admin Dashboard:** Admins can manage registrations, view participant data, and oversee the event.
 - **JWT-based Authentication:** Secure login and session management using Django and SimpleJWT.
@@ -100,5 +102,5 @@ This project is licensed under the MIT License.
 
 ---
 
-**Developed by DekuDZ** 🚀
+**Developed by Yanis(DekuDz)** 🚀
 
