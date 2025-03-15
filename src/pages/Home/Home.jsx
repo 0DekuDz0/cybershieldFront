@@ -1,6 +1,10 @@
 import "./Home.css";
+import { useState } from "react";
+import Register from "../../Components/Register/Register";
 
 export default function Home() {
+  const element = document.getElementById("registerForm");
+  const [showRegister, setShowRegister] = useState("invisible");
   return (
     <>
       <div className="home" id="home">
@@ -10,6 +14,17 @@ export default function Home() {
             Cyber<span>Shield</span> Hackathon
           </h1>
         </div>
+
+        <div className="registerButton">
+          <button  onClick={()=>{
+            showRegister === "invisible" ? setShowRegister("visible") : setShowRegister("invisible")
+          }}><h2>Register</h2></button>
+        </div>
+
+        <div className={`registerForm-${showRegister}`} id="registerForm">
+                <Register element={element}></Register>
+              </div>
+
 
       </div>
       <div className="eventInfo">

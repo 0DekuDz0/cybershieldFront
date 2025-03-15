@@ -71,6 +71,7 @@ export default function Register({ element }) {
             type="button"
             className="close-button"
             onClick={() => {
+              console.log("close", element);
               element.className = "registerForm-invisible";
             }}
           >
@@ -160,12 +161,12 @@ export default function Register({ element }) {
                   onChange={(e) => setSkills(e.target.value)}
                 />
               </div>
-              <div className="questionInput">
+              <div className="questionInput ">
                 <label htmlFor="previousParticipation">
                   <h3>Have you participated in hackathons before?</h3>
                 </label>
-                <div>
-                  <div>
+                <div className="row">
+                  <div >
                   <input
                       type="radio"
                       name="previousParticipation"
@@ -235,7 +236,7 @@ export default function Register({ element }) {
                     team? 
                   </h3>
                 </label>
-                <div>
+                <div className="row">
                   <div>
                     <input
                       type="radio"

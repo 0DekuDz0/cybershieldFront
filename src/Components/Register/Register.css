@@ -192,3 +192,24 @@
     width: 100%;
     height: 5vh !important;
 }
+
+@media screen and (max-width:768px){
+    .registerSection{
+        width: 90%;
+        padding: 0 2rem;
+        overflow-x: scroll;
+
+    }
+
+    .questionInput div{
+        flex-direction: column;
+    }
+
+    .row{
+        flex-direction: row !important;
+    }
+
+    .formData{
+        overflow-x: scroll;
+    }
+}
